@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - ToDo List test</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1> This is a To Do List web 
+based on <a href="https://www.coursera.org/learn/duke-programming-web?specialization=java-programming&utm_source=gg&utm_medium=sem&utm_campaign=09-JavaProgramming-SWEngg-ROW&utm_content=B2C&campaignid=6496487414&adgroupid=108655111394&device=c&keyword=&matchtype=&network=g&devicemodel=&adpostion=&creativeid=453161833397&hide_mobile_promo&gclid=CjwKCAjw8sCRBhA6EiwA6_IF4WujHahywwN9s96S9puBvu1L1EvkpLWWzcmORdl1u4moT4qbtvmOlRoCGDIQAvD_BwE" target="_blank">
+    Coursera   </a> Programming Exercise </h1>
+<h2> Programming Foundations with JavaScript, HTML and CSS </h2>
+
+<h2> Author: <a href="https://github.com/Oscar-Chung-CKL" target="_blank" >
+    Oscar Chung
+  </a> </h2>
+    <h1 id="myHeader">TO DO List</h1>
+
+<!-- STEPs 1 and 2 below here  -->
+    <input id="addButton" type="button" value="Add" onclick="addTask()">
+  <input type="text" id="input" placeholder="enter task...">
+<hr>
+    
+<ul id="tasks">
+  <li>
+    <input type="button" class="done" onclick="markDone(this.parentNode)" value="&#x2713;" />
+    <input type="button" class="remove" onclick="remove(this.parentNode)" value="&#x2715;" />
+    make todo list
+  </li>
+  
+    </ul>
+<hr>
+<!-- STEPs 8 and 9 below here  -->
+ 
+<div id="divabout" > </div>
+
+<input type="button" value="About" onclick="doAbout()" />
+  
+    
+ <!-- STEP 13 below here  -->
+<input type="button" value="Clear" onclick="clearAbout()" />
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
